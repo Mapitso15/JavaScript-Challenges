@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Largest number</title>
+</head>
+<body>
+  <script>
+  var array1 = [160, 178, 80];
+
+  console.log(Math.max(...array1));
+
+  var firstNumber,
+               secondNumber,
+               thirdNumber,
+
+
+  firstNumber = window.prompt("Enter first number");
+
+  secondNumber = window.prompt("Enter second number");
+
+  thirdNumber = window.prompt("Enter third number");
+
+
+  firstNumber = parseInt(firstNumber);
+  secondNumber = parseInt(secondNumber);
+  thirdNumber = parseInt(thirdNumber);
+  findLargNum(firstNumber,secondNumber,thirdNumber);
+
+  function findLargNum(firstNumber,secondNumber,thirdNumber){
+               //determine result
+  if (firstNumber > secondNumber) {
+  if(firstNumber > thirdNumber) window.alert(firstNumber + " is largest");
+               }
+  else if(secondNumber > thirdNumber) window.alert(secondNumber + " is largest");
+  else window.alert(thirdNumber + " is largest");
+
+           }
+  </script>
+</body>
+</html>
